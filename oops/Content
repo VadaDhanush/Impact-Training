@@ -17,6 +17,8 @@ Constructor 2 types:-
 ->  Constructor is neither cls nor method, its having cls name and method property.
 -> Constructors are used to initialize the objects.
 
+
+
 // INHERITANCE :-
 ->  1. Single : Properties are inherited to child cls from parent cls.
 
@@ -30,6 +32,8 @@ Constructor 2 types:-
 -> Extend keyword is used to get properties from classes.
 -> Implement keyword is used to inherit properties from interfaces.
 
+
+
 /// POLYMORPHISM: -
 -> Same method existing in multiple times in diff forms
 
@@ -39,12 +43,13 @@ Constructor 2 types:-
 
 -> Main method can be overridden
 
-/// ENCAPSULATION :- Binding method and data and hiding sensitive data . 
 
+/// ENCAPSULATION :- Binding method and data and hiding sensitive data . 
 /// ABSTRACTION :- Hiding implementation showing essential data.
 
 -> If a method is a abstract method the method name should start with abstract keyword, 
    as well as the cls name should be start with abstract keyword.
+
 
 /// 4 TYPES OF ABSTRACTION:-
 1. Data abstraction
@@ -53,8 +58,7 @@ Constructor 2 types:-
 4. Procedure abstraction
 
 -> Abstract methods are incomplete methods.
-
-INTERFACE contains only abstract methods.
+  INTERFACE contains only abstract methods.
 -> We cant create object for interface.
 
 AXIS  SPECIFIER:- public, private, protected, default
@@ -63,7 +67,6 @@ AXIS  SPECIFIER:- public, private, protected, default
 CLASS :-
 
 CODE:-
-
 class A {
     public static void method1() {
         System.out.println("Hello");
@@ -91,7 +94,6 @@ class Main{
 END.
 
 SINGLE INHERITANCE :-
-
 CODE :-
 
 class A {
@@ -119,8 +121,9 @@ class Main{
 
 END.
 
-/// MULTI INHERITANCE :-
 
+
+/// MULTI INHERITANCE :-
 CODE :-
 
 class A {
@@ -153,10 +156,9 @@ class Main{
 
 END.
 
-///INTERFACE:-
 
--> Interface contains all abstract methods. Cant declare array class 
--> 
+///INTERFACE :-  Interface contains all abstract methods. Cant declare array class 
+ 
 
 
 
