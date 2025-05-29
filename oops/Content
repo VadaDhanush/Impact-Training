@@ -1,0 +1,185 @@
+OOPS JAVA:-
+
+Key requirements:-
+-> Class , object , constructor , interface
+
+-> Class contains abstract and non abstract methods
+-> CLASS is a virtual entity or blue print of object.
+-> OBJECT is a instance of class.
+-> To call non static methods which one present in the particular cls we have to
+   create for that particular class.
+-> If it is static method we can directly call using class.
+
+Constructor 2 types:-
+1. DEFAULT CONSTRUCTOR :- For every cls therer will be default constructor.
+2. PARAMETER CONSTRUCTROR :- Which contains parameters.
+
+->  Constructor is neither cls nor method, its having cls name and method property.
+-> Constructors are used to initialize the objects.
+
+// INHERITANCE :-
+->  1. Single : Properties are inherited to child cls from parent cls.
+
+    2. Multi : Properties are inherited to child cls to grand parent cls and 
+       again prop are inherited to child cls to parent cls.
+
+    3. Multiple : Properties are inherited to child cls from multiple parent cls
+
+    4. Heirarchy : Properties are inherited to multiple child
+
+-> Extend keyword is used to get properties from classes.
+-> Implement keyword is used to inherit properties from interfaces.
+
+/// POLYMORPHISM: -
+-> Same method existing in multiple times in diff forms
+
+1. Method overloading :-Same method name existing in same cls with different parameters.
+
+2. Method overriding :- Method declare in child class on the same method existing in parent cls
+
+-> Main method can be overridden
+
+/// ENCAPSULATION :- Binding method and data and hiding sensitive data . 
+
+/// ABSTRACTION :- Hiding implementation showing essential data.
+
+-> If a method is a abstract method the method name should start with abstract keyword, 
+   as well as the cls name should be start with abstract keyword.
+
+/// 4 TYPES OF ABSTRACTION:-
+1. Data abstraction
+2. Functional abstraction
+3. Control abstraction
+4. Procedure abstraction
+
+-> Abstract methods are incomplete methods.
+
+INTERFACE contains only abstract methods.
+-> We cant create object for interface.
+
+AXIS  SPECIFIER:- public, private, protected, default
+
+
+CLASS :-
+
+CODE:-
+
+class A {
+    public static void method1() {
+        System.out.println("Hello");
+    }
+    int method2(int a, int b){
+        return a+b;
+    }
+}
+class B {
+    int method3(int a, int b, int c){
+        return a+b+c;
+    }
+}
+class Main{
+    public static void main(String[] args){
+        A obj1 = new A();
+        B obj2 = new B();
+        
+        A.method1();
+        int res = obj1.method2(2,3);
+        System.out.println(res);
+    }
+}
+
+END.
+
+SINGLE INHERITANCE :-
+
+CODE :-
+
+class A {
+    public static void method1() {
+        System.out.println("Hello");
+    }
+    int method2(int a, int b){
+        return a+b;
+    }
+}
+class B extends A {
+    int method3(int a, int b, int c){
+        return a+b+c;
+    }
+}
+class Main{
+    public static void main(String[] args){
+        A obj1 = new A();
+        B obj2 = new B();
+     
+        int res = obj2.method2(2,3);
+        System.out.println(res);
+    }
+}
+
+END.
+
+/// MULTI INHERITANCE :-
+
+CODE :-
+
+class A {
+    public static void method1() {
+        System.out.println("Hello");
+    }
+    int method2(int a, int b){
+        return a+b;
+    }
+}
+class B extends A {
+    int method3(int a, int b, int c){
+        return a+b;
+    }
+}
+class C extends B {
+    int method4(int a){
+        return a;
+    }
+}
+class Main{
+    public static void main(String[] args){
+        A obj1 = new A();
+        B obj2 = new B();
+        C obj3 = new C();
+        int res = obj3.method2(2,3);
+        System.out.println(res);
+    }
+}
+
+END.
+
+///INTERFACE:-
+
+-> Interface contains all abstract methods. Cant declare array class 
+-> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
