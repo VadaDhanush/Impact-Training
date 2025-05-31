@@ -19,31 +19,7 @@ class Main {
 
 END.
 
-// PATTERNS PRINTING :-
--> Print no:of rows
--> Print no:of coloumns
--> Print wt to print and wt not to print
 
-CODE:-                                                              
-                                                                                 
-  class Main {
-    public static void main(String[] args) {                                     
-           for(int i=1; i<=5; i++){
-            for(int j=1; j<=5; j++){
-                if(i==1 || i==5 || j==1 || j==5){
-                     System.out.print(" * ");
-                }
-                else{
-                    System.out.print("   ");
-                }
-            }
-            System.out.println();
-        }
-            
-    }
-}
-
-END.
 
 // MAPPING;-
 CODE:-
@@ -92,7 +68,7 @@ class Main {
 
 END..
 
-DAY 4:-
+
 SWTCH CASE:=
 -> Cases have to be the same type of expressions, must be constant or literal
 -> Duplicate case values are not allowed.
@@ -126,24 +102,7 @@ class Main{
 
 END.
 
-**********
-// PRINTING NUMBER PYRAMID :-
-CODE:==
 
-class main{
-    public static void main(String[] args){
-        for(int i=1; i<=5; i++){
-            for(int j=1; j<=(2*i-1); j++){
-                System.out.print(j);
-            }
-            System.out.println();
-        }
-    }
-}
-
-END..
-
-***********
 TERNARY OPERATOR OR ENHANCED IF ELSE:-
 (condition) ? statement1: statement2; -> syntax
 
