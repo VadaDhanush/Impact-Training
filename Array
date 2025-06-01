@@ -1,0 +1,141 @@
+*ARRAY*:-
+
+int a=1;
+int a=2;
+int a=3;
+-> All the reference names will be stored in stack memory
+-> All the values which were assigned to those variables will be stored in heap memory
+
+Q1) Here all the blocks are having same data type. If all the blocks having b same data type, Y to create multiple variables, simply we can create an array to store all those values.
+
+// Def of Array:- Collection of similar type of data in a continuos allocation.
+-> If variable A stored at address 100, then the second value of the array should be allocated at 104.
+
+// SYNTAX OF ARRAY:-
+datatype[] array name;
+
+class main{
+public static void main(String[] args) {
+int[] arr = {1,2,3,4,5};
+int[] arr;
+arr = {1,2,3,4,5};
+  }
+}
+
+-> If u want to get the data previously we store all the data values in the individual variables
+-> If u want the data simply we can print the variables & in array we have to print the data using index values.
+-> Index values by default it will start with "0".
+
+CODE:-
+
+class main{
+public static void main(String[] args) {
+int[] arr = {1,2,3,4,5}
+
+
+
+
+
+
+-> To get the size of array, we have to use "arr.length".
+-> To get the length of string "str.length".
+
+TYPE SOF OUT FORMATS:-
+1. We can use simple for loop.
+2. Using for each loop.
+3. 
+
+-> tostring is an inbuilt method to print array values.
+-> internally tostring contains for loop and it will print along with open and closed square brackets followed by commas.
+-> Java strictly follows camel case.
+
+CODE:-
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5};
+        
+        System.out.println(Arrays.toString(arr));
+    }
+}
+
+END.
+
+
+Q) In a given array count odd and even numbers
+A) CODE:-
+
+class oddeven{
+    public static void main(String[] args){
+        int[] arr = {13,23,476,84,53,93};
+        int oddCount=0;
+        int evenCount=0;
+        for(int i=0; i<arr.length; i++){
+            if(arr[i]%2==0){
+                evenCount++;
+            }else{
+                oddCount++;
+            }
+        }
+        System.out.println("Even count is:- n" + evenCount + " and odd count is:- " + oddCount);
+        
+    }
+}
+
+END.
+
+// Initializing and declaring th array with size
+   int[] arr = new int[5];
+-> Once you created an array along with size it cant be modified the size is fixed.
+
+   int[] arr, will be created in stack memory and call it as a reference and new key word helps to create object space for the array.
+
+-> If the array type is integer by default all the values will be zero & if array type is string then all the default will be NULL.
+
+
+-> Whenever we r trying to assign or print nth index we will get array out of bound exception
+
+// PREMETIVE DATA TYPES:- This are cant be splitted or divided.
+  Ex:- int, float, char.
+
+// NON-PREMETIVE DATA TYPES:- This can be splitted or divided.
+  Ex:- strings and all user defined objects.
+
+// Zig-Zag Array:-
+
+CODE:-
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int[][] arr = {
+            {1,2,3},{4,5},{6,7,8,9}
+        };
+        for(int i=0; i<arr.length; i++){
+            System.out.println(Arrays.toString(arr[i]));
+        }
+    }
+}
+
+END.
+
+// MISSING ELEMENT:-
+CODE:-
+
+import java.util.*;
+
+class Main{
+     public static void main(String[] args){
+      int[] arr = {1 ,2 ,3 ,5 ,6 ,7 ,8 ,9};
+         for(int i=0;i<arr.length-1;i++){
+             if(arr[i] + 1!=arr[i+1]){
+               int miss = arr[i]+1;
+               System.out.println(miss);
+              }
+           }
+        }
+     }
+
+END.
