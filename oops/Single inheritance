@@ -1,0 +1,27 @@
+SINGLE INHERITANCE :-
+CODE :-
+
+class A {
+    public static void method1() {
+        System.out.println("Hello");
+    }
+    int method2(int a, int b){
+        return a+b;
+    }
+}
+class B extends A {
+    int method3(int a, int b, int c){
+        return a+b+c;
+    }
+}
+class Main{
+    public static void main(String[] args){
+        A obj1 = new A();
+        B obj2 = new B();
+     
+        int res = obj2.method2(2,3);
+        System.out.println(res);
+    }
+}
+
+END.
