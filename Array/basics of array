@@ -26,16 +26,6 @@ arr = {1,2,3,4,5};
 -> If u want the data simply we can print the variables & in array we have to print the data using index values.
 -> Index values by default it will start with "0".
 
-CODE:-
-
-class main{
-public static void main(String[] args) {
-int[] arr = {1,2,3,4,5}
-
-
-
-
-
 
 -> To get the size of array, we have to use "arr.length".
 -> To get the length of string "str.length".
