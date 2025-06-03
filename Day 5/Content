@@ -1,0 +1,21 @@
+// Greedy Algorithm:-
+
+-->  Custom Sorting:- If it is sorting we have only 2 possibilities , either ascending or descending & when it comes to custom sorting we can sort the values according to our format 
+
+                                Ex:- 19,26,37 ----> 37,26,19     
+                                      Ascend        Descend            26,37,19 ---> Custom Sorting
+
+-> From given arrays make pairs 
+-> Sort the array based on end type 
+-> After sorting for sure will take 1st meeting 
+-> Compare end time to starting time of next pair
+-> If starting time is strictly greater consider the meeting
+
+RECURSIONS:-
+-> Recursions are nothing but it and its self
+// Two Types
+-> Function calling same function it self and it self 
+-> Function calling another function it self and it self 
+
+-> If we didn't mention base case properly will get an exception called stack overflow.
+-> Recursions are used to break the code.
