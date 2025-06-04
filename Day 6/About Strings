@@ -1,0 +1,17 @@
+STRINGS:-
+
+-> Collection of charecters.
+
+-> As all the elements are similar that is y we created an array to store all those similar elememnts, and to get array values using index values
+Similarly to store multiple charecters we created a string.
+
+-> When u created a string reference will be stored in stack memory, object will be created in string pool. Once a object is created in string pool it will be created with some fixed size so we cant remove we cant add we cant modify the string that is y "strings are immutable".
+
+                            "HELLO"             " "
+                             "ELLO"             "H"
+                             "LLO"              "H"
+                              "LO"              "HL"
+                              "O"               "HLL"
+                                                "HLLO" 
+
+-> Whenever input string becomes empty we have to stop the recursion.
