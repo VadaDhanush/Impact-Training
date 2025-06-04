@@ -1,0 +1,29 @@
+-> Double is used to check the address
+
+-> Length() - Returns the length of the string
+-> charAt(int index) - Returns the character at the specific index
+-? Substring(int beginIndex, int endIndex) - Extracts a string
+-> contains(CharSequence s) - Checks if the string contain sequence.
+-> startsWith(String prefix) / endsWith(String suffix) - string starts/ ends with a given substring.
+-> toUpperCase() / toLowerCase() - Converts the string to lowercase.
+-> trim() - Removes leading and trailing spaces.
+-> replace(String old, String new) - Replaces occurrence 
+-> split(String regex) - Splits the string into nan array 
+-> equals(String anotherString) / equalsIgnoreCase(String) - Compares two strings.
+
+ /// BACKTRACKING:-
+
+-> It is an example of recursion.
+-> We have only two steps 1. Taking the values and 2. Not taking the values.
+-> Whenever u reach base case u have to print all the base case elements. When the array length is equal to original array length that is our base case.
+-> In every recursive call remove the last element then it will backtrack.
+
+
+ /// DUTCH NATIONAL FLAG:-
+
+-> Array = {1, 0, 2, 1, 2, 0, 2, 1, 0, 1}
+-> L & M 0th index , H is at length - 1.
+-> The elements between M & H are not sorted. We have to run a loop from M to H. Both crosses.
+-> If arr[M] is 0 swap arr[M] and arr[L]. After swaping increase M and L.
+-> If arr[M]=1 just move M pointer.
+-> If arr[M]=2 swap arr[M] and arr[H] after swaping decrease H.
