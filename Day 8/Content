@@ -1,0 +1,18 @@
+ /// MAJORITY ELEMENTS:-
+
+-> Find the majority of an element in a given array
+
+-> Assume that strating elemenr is my target element
+-> Whenever counter becomes zero restart the target value very next element of the array.
+-> If counter becomes zero it states that there is no majority elements and counter>0 check that target element in our array and 
+   count how many times it repeated and if it is repeated more than n/2 thats the majority element
+
+[2,2,1,2,1] -> [2 (element > n/2)] 
+
+/// LONGEST CONSECUTIVE ELEMENTS:-
+  -> [1,2,101,3,102,4,103]      ->     [4 (1,2,3,4)]
+                                       [3 (101,102,103)]
+/// STEPS
+-> Push the array elements in to the set, as set doesnt contains index values
+-> Start elements iterating using for each loop.
+-> Find the starting point. 
