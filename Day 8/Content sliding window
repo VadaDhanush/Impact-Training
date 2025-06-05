@@ -1,0 +1,5 @@
+/// SLIDING WINDOW:-
+
+-> We have to use two pointers.
+-> Types 1.Constant 2.Dynamic
+-> In constant window size is fixed , in dynamic the window might expand or sink.
