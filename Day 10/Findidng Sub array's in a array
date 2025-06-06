@@ -1,0 +1,26 @@
+/// [1,0,1,0,1]
+
+SUB ARRAYAS:-
+
+[1] [0] [1] [0] [1] 
+[1,0] [1,0,1] [1,0,1,0] [1,0,1,0,1] [0,1]
+[0,1,0] [0,1,0,1] [1,0] [1,0,1] [0,1]
+
+Total : 15 sub arrays
+Goal = 2
+
+sum<_good
+c1 = 14
+sum <_ goal - 1
+c2 = 10
+
+while(r<n)
+sum = sum+arr[r];
+if(sum<_goal){
+c1++;
+}
+if(sum<_goal){
+sum = sumarr[r];
+l++;
+}
+r++;
