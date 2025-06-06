@@ -1,0 +1,49 @@
+// Longest Consecutive Elements
+
+Steps:
+
+1. Push array elements into the set.
+2. set doesn't contain index values, use for-each loop.
+3. Start iterating the array elements.
+4. find the starting point.
+
+   {1, 2, 101, 3, 102, 4, 103}  -> [4 (1, 2, 3, 4) 
+                                  3 (101, 102, 103) ]
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+
+    public static int longestConsecutive(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+
+        Set<Integer> set = new HashSet<>();
+        for (int n : nums) set.add(n);
+
+        int best = 0;
+
+       
+        for (int num : set) {
+           
+            if (!set.contains(num - 1)) { 
+                int current = num;
+                int length  = 1;
+
+                while (set.contains(current + 1)) {
+                    current++;
+                    length++;
+                }
+
+                best = Math.max(best, length);
+            }
+        }
+        return best;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 101, 3, 102, 4, 103};
+        int result = longestConsecutive(nums);
+        System.out.println("Maximum consecutive length: " + result); 
+    }
+}
