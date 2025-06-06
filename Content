@@ -1,0 +1,23 @@
+Subarray         subset        substring          subsequence
+
+ [1,2,3]         [1,2,3]       "a,b,c"            "a,b,c"
+
+  [1,2]c          [1,2]c           ab c                ab c
+
+ [1,3]x           [1,3]c           ac x                ac c
+
+ [2,1]x           [2,1]x           ba x                ba x
+
+-> Array element should be consecutive. 
+-> Elements might be continous .
+
+/// Substring :- Characters should be continuous
+/// Sub sequence :- Characters might be continuous or might not be. It should be sequence, reverse not possible.
+
+/// SLIDING WINDOW :-
+-> Input :- abcabcdb
+-> Step 1 :- Initialize L & R pointer at 0th index.
+-> Run the loop from R to n-1 . Create a set
+-> Check R characters in set, if we dont have push the character into the set. After pushing the character increase R.
+-> If R character contains in the set remove L character and move L pointer.
+-> Calculate the length. Formula:- "R-L+1".
