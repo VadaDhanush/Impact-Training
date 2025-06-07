@@ -1,0 +1,25 @@
+// Leetcode : 1752
+
+class Main{
+    public static int Sorted(int[] nums){
+        int left = 0;
+        int right = nums.length-1;
+        int mid = left+(right-left)/2;
+        
+        while(left<right){
+          if(nums[mid]<right){
+               return right=mid;
+          } if(nums[mid]>right){
+                return left = mid+1;
+          }
+        }
+        return -1;
+    }
+    
+    public static void main(String[] args){
+    int[] nums = {9,11,12,2,5,7};
+   
+    int result = Sorted(nums);
+    System.out.println(result);
+}
+}
