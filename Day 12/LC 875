@@ -1,0 +1,19 @@
+// Leetcode: 875
+// KoKo Eating Bananas.
+
+[abcabc] = [a][b][c][a][b][c][ab][bc][ca][ab][bc][abc][bca][cab][abc][abca] [bcab][cabc][abcab][bcabc][abcabc]
+            
+
+// Maximum product of sub arrays
+
+arr = [5,3,2,-10,5,7,8,0,-1,2]
+
+//observation:
+
+- in a given sub array, if we have even negative values then product is positive.
+- in a given sub array, if we have odd negative values then product is negative.
+- if we got zero , then product is zero. so initialize the product with 1.
+- initilize 2 variable, prefix and suffix.
+- calculate prefix product and suffix product and get max(prefix, suffix)
+
+Ex:nums = {2,3,-2,2}
