@@ -1,0 +1,32 @@
+LINKED LIST:- 
+-> There is no data type which can sore data as well as address, 
+   we have to create user defined data type which can store data as well as address.
+-> There are 3 types :-
+1. Single LS :- Data will flow in single direction.
+2. Double LS :- Data will flow in double direction
+3. Circular LS :- Starting and ending pointer are same. 
+
+
+Class node{
+int data;
+Node next;
+}
+-> Two possible objects
+1st type :- Single node , last node :- This object can accept data and address will be null
+
+Node(int data1) {
+this.data = data1;
+this.next = null;
+}
+
+2nd Type :- We have to create a constructor which can accept data as well as address.
+
+Node (int data1, Node next1) {
+this.data = data1;
+this.next = next1;
+}
+
+-> LINKED LIST is used for faster insertions and faster deletions.
+
+// INSERTIONS :- Insert at head, Insert at tail, Insert at the Nth node (before or after), Insert by value.
+// DELETIONS :- Delete head, delete tail, delete Nth node, delete by value.
