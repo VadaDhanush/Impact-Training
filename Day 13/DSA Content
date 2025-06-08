@@ -1,0 +1,23 @@
+DATA STRUCTURE AND ALGORITHM:-
+
+* DATA STRUCTURES :- DS are the ways to organize and store data so it can be accessed and modified efficiently.
+
+             Ex:- Stack, Queue, Linked list, Graph, Tree, Array
+
+* ALGORITHMS :- These are step by step procedures for solving problems. They often work with data structures.
+
+            Ex:- Dynamic, Back tracking, Greedy, Sorting, Searching
+
+* TIME COMPLEXITY :-
+1. Ignore constants.
+2. Ignore small values.
+3. Focus on worst case.
+
+* SPACE COMPLEXITY :-
+-> The extra space we are using to solve problem.
+-> Use cases :- Browsers, Google maps
+
+/// Type of DATAT STRUCTURE :-
+** Linear and non linear
+-> LINEAR :- Linked list, Stack and Queue.
+-> NON-LINEAR :- Trees, Graphs, Heaps.
